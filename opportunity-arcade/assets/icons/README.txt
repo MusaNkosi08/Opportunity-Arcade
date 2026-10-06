@@ -1,0 +1,1 @@
+Optional pixel-art category icons can be added here. Current build uses accessible emoji/text icons.

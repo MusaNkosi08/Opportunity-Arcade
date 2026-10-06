@@ -1,0 +1,7 @@
+
+/* Additional small-screen refinements */
+@media(max-width:420px){
+  main{padding-left:14px;padding-right:14px}.hero h1{font-size:23px}
+  .btn{width:100%}.card-actions{flex-direction:column}
+  .section-head{align-items:flex-start;flex-direction:column}
+}

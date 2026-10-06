@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Opportunity Arcade is a demo youth opportunities portal for young South Africans.">
+<title>Insert Coin | Opportunity Arcade</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Orbitron:wght@500;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css"><link rel="stylesheet" href="css/arcade.css"><link rel="stylesheet" href="css/responsive.css">
+</head><body><noscript><div class="alert danger" style="margin:10px">JavaScript is required for the interactive arcade features. Please enable JavaScript.</div></noscript>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header"><nav class="nav" aria-label="Primary navigation">
+<a class="brand" href="index.html">OPPORTUNITY<br>ARCADE</a>
+<button class="menu-btn" aria-expanded="false" aria-controls="nav-links">☰ MENU</button>
+<div class="nav-links" id="nav-links">
+<a href="index.html" >Lobby</a>
+<a href="opportunities.html" >Quests</a>
+<a href="resources.html" >Training</a>
+<a href="contact.html" aria-current='page'>Insert Coin</a>
+<a href="opportunities.html?saved=1">SAVED <span class="nav-count" id="saved-count">0</span></a>
+<button id="profile-trigger" class="profile-trigger" type="button" aria-label="Open My Profile" aria-haspopup="dialog">👤 MY PROFILE</button>
+</div></nav></header>
+<div id="hud" class="hud" aria-live="polite"><span id="player-name">PLAYER 1</span> · XP <b id="hud-xp">0</b> · BADGES <b id="hud-badges">0</b></div>
+<main id="main">
+<section class="hero"><span class="eyebrow">PLAYER SUPPORT</span><h1 style="font-size:28px">INSERT COIN</h1><p>Send a message, report a glitch, suggest a quest or rate the game.</p></section>
+<div class="grid">
+<article class="card"><h2>SEND A MESSAGE</h2><form class="contact-form" data-form-type="enquiry"><div class="field"><label for="name1">Player name</label><input id="name1" name="name" class="input" required><small class="error"></small></div><div class="field"><label for="email1">Email</label><input id="email1" name="email" type="email" class="input" required><small class="error"></small></div><div class="field"><label for="message1">Message</label><textarea id="message1" name="message" class="textarea" rows="5" required minlength="10"></textarea><small class="error"></small></div><button class="btn primary" type="submit">SEND MESSAGE</button><div class="form-status"></div></form></article>
+<article class="card"><h2>REPORT A GLITCH</h2><form class="contact-form" data-form-type="report"><div class="field"><label for="report">What is incorrect or expired?</label><textarea id="report" name="message" class="textarea" rows="5" required minlength="10"></textarea><small class="error"></small></div><div class="field"><label for="email2">Email</label><input id="email2" name="email" type="email" class="input" required><small class="error"></small></div><button class="btn danger" type="submit">REPORT GLITCH</button><div class="form-status"></div></form></article>
+<article class="card"><h2>SUBMIT A NEW QUEST</h2><form class="contact-form" data-form-type="suggest"><div class="field"><label for="org">Organisation</label><input id="org" name="organisation" class="input" required><small class="error"></small></div><div class="field"><label for="quest">Opportunity information</label><textarea id="quest" name="message" class="textarea" rows="5" required minlength="10"></textarea><small class="error"></small></div><button class="btn" type="submit">SUBMIT QUEST</button><div class="form-status"></div></form></article>
+<article class="card"><h2>RATE THIS GAME</h2><form class="contact-form" data-form-type="feedback"><div class="field"><label for="rating">Rating</label><select id="rating" name="rating" class="select" required><option value="">Choose</option><option>5 - Excellent</option><option>4 - Good</option><option>3 - Okay</option><option>2 - Needs work</option><option>1 - Poor</option></select><small class="error"></small></div><div class="field"><label for="feedback">Feedback</label><textarea id="feedback" name="message" class="textarea" rows="5" required minlength="10"></textarea><small class="error"></small></div><button class="btn primary" type="submit">RATE GAME</button><div class="form-status"></div></form></article>
+</div>
+</main><footer><div class="footer-inner"><span>© 2026 Opportunity Arcade · OFFICIAL SOURCES</span><span>Verify current eligibility and deadlines on the provider page.</span></div></footer>
+<script src="js/app.js" defer></script><script src="js/validation.js" defer></script>
+</body></html>
