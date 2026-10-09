@@ -1,0 +1,16 @@
+
+/* Additional small-screen refinements */
+@media(max-width:900px){
+  .partner-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+@media(max-width:700px){
+  .toolkit-grid{grid-template-columns:1fr}.toolkit-card{min-height:0}.partner-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.partners-section .section-head{align-items:flex-start;flex-direction:column}
+  .access-path{grid-template-columns:1fr;gap:8px;padding-top:10px}.access-path-intro{padding:10px 0}.access-path-grid{grid-template-columns:1fr}.access-path-card{min-height:185px}
+}
+@media(max-width:420px){
+  main{padding-left:14px;padding-right:14px}.hero h1{font-size:23px}
+  .btn{width:100%}.card-actions{flex-direction:column}
+  .section-head{align-items:flex-start;flex-direction:column}
+  .toolkit-grid{grid-template-columns:1fr}.toolkit-card{min-height:0}.toolkit-card summary{min-height:110px;padding:18px}.toolkit-content{padding:0 18px 20px}
+  .explore-quests{width:100%;font-size:10px;padding:15px 10px}
+}

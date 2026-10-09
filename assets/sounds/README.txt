@@ -1,0 +1,1 @@
+Optional chiptune effects may be added. Audio is intentionally not auto-played.

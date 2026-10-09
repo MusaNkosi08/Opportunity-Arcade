@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Opportunity Arcade is a demo youth opportunities portal for young South Africans.">
+<title>Training Grounds | Opportunity Arcade</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Orbitron:wght@500;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css"><link rel="stylesheet" href="css/arcade.css"><link rel="stylesheet" href="css/responsive.css">
+</head><body><noscript><div class="alert danger" style="margin:10px">JavaScript is required for the interactive arcade features. Please enable JavaScript.</div></noscript>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header"><nav class="nav" aria-label="Primary navigation">
+<a class="brand" href="index.html">OPPORTUNITY<br>ARCADE</a>
+<button class="menu-btn" aria-expanded="false" aria-controls="nav-links">☰ MENU</button>
+<div class="nav-links" id="nav-links">
+<a href="index.html" >Lobby</a>
+<a href="opportunities.html" >Quests</a>
+<a href="career-match.html" >CV Match</a>
+<a href="resources.html" aria-current='page'>Training</a>
+<a href="contact.html" >Insert Coin</a>
+<a href="opportunities.html?saved=1">SAVED <span class="nav-count" id="saved-count">0</span></a>
+<button id="profile-trigger" class="profile-trigger" type="button" aria-label="Open My Profile" aria-haspopup="dialog">👤 MY PROFILE</button>
+</div></nav></header>
+<div id="hud" class="hud" aria-live="polite"><span id="player-name">PLAYER 1</span> · XP <b id="hud-xp">0</b> · BADGES <b id="hud-badges">0</b></div>
+<main id="main">
+<section class="toolkit-intro"><span class="eyebrow">POWER-UP ZONE // CAREER EDITION</span><h1>THE TOOLKIT</h1><p>Six practical power-ups for your next application. Open a card, take what you need and get ready to play.</p></section>
+<section class="toolkit-grid" aria-label="Career resources">
+<details class="toolkit-card toolkit-cyan" open>
+<summary><span class="toolkit-number">01</span><span class="toolkit-title">YOUR CV, SORTED</span><span class="toolkit-icon">+</span></summary>
+<div class="toolkit-content"><p>Keep your CV clear and targeted. Put your strongest relevant skills near the top, use readable headings and check dates, contact details and spelling before submitting.</p><ul><li>Lead with skills relevant to the opportunity.</li><li>Use short bullet points and concrete results.</li><li>Save a clean PDF with your name in the filename.</li></ul></div>
+</details>
+<details class="toolkit-card toolkit-magenta">
+<summary><span class="toolkit-number">02</span><span class="toolkit-title">OWN THE INTERVIEW</span><span class="toolkit-icon">+</span></summary>
+<div class="toolkit-content"><p>Prepare short examples of your work using a situation, action and result structure. Research the organisation and prepare questions about the role.</p><ul><li>Practise answers out loud, not only in your head.</li><li>Bring one example that shows how you solved a problem.</li><li>Prepare two thoughtful questions to ask at the end.</li></ul></div>
+</details>
+<details class="toolkit-card toolkit-lime">
+<summary><span class="toolkit-number">03</span><span class="toolkit-title">BUILD YOUR PROFILE</span><span class="toolkit-icon">+</span></summary>
+<div class="toolkit-content"><p>Use a professional profile to show your skills, projects, education and experience. Keep the same core facts across your CV and profile.</p><ul><li>Choose a clear, current profile photo.</li><li>Describe what you can do, not only what you have studied.</li><li>Add projects, volunteering or community work.</li></ul></div>
+</details>
+<details class="toolkit-card toolkit-amber">
+<summary><span class="toolkit-number">04</span><span class="toolkit-title">WRITE A COVER LETTER THAT WORKS</span><span class="toolkit-icon">+</span></summary>
+<div class="toolkit-content"><p>Explain why the specific role fits your skills. Avoid repeating your entire CV. Mention relevant evidence and keep it concise.</p><ul><li>Name the role and organisation directly.</li><li>Connect one or two strengths to the opportunity.</li><li>Finish with a clear, professional call to action.</li></ul></div>
+</details>
+<details class="toolkit-card toolkit-coral">
+<summary><span class="toolkit-number">05</span><span class="toolkit-title">SPOT THE SCAM</span><span class="toolkit-icon">+</span></summary>
+<div class="toolkit-content"><p>Be suspicious of payment requests, guaranteed jobs, pressure to act immediately, requests for passwords or OTPs, and links that do not match the real organisation. Verify independently.</p><ul><li>Never pay to apply or to secure a job.</li><li>Check the sender and destination URL carefully.</li><li>Contact the organisation through its official website.</li></ul></div>
+</details>
+<details class="toolkit-card toolkit-blue">
+<summary><span class="toolkit-number">06</span><span class="toolkit-title">GET YOUR DOCS READY</span><span class="toolkit-icon">+</span></summary>
+<div class="toolkit-content"><p>Prepare a clean folder containing your CV, qualification records and other commonly requested documents. Share only what the application genuinely requires.</p><ul><li>Keep scans readable and use descriptive filenames.</li><li>Check whether documents need certification.</li><li>Remove sensitive information that is not requested.</li></ul></div>
+</details>
+</section>
+<section class="partners-section" aria-labelledby="partners-title">
+<div class="section-head"><div><span class="eyebrow">OFFICIAL NETWORK // EXPLORE FURTHER</span><h2 id="partners-title">PARTNER ORGANISATION</h2></div><span class="muted">11 OFFICIAL DOORS</span></div>
+<div class="partner-grid">
+<a class="partner-card" href="https://capaciti.org.za/" target="_blank" rel="noopener noreferrer"><img class="official-logo" src="https://capaciti.org.za/wp-content/uploads/2025/10/Capaciti-OG-Image-1024x538.png" alt="CAPACITI logo" loading="lazy"><span>CAPACITI</span><small>Digital careers and skills</small></a>
+<a class="partner-card" href="https://www.ibm.com/skillsbuild" target="_blank" rel="noopener noreferrer"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/ibm.svg" alt="IBM logo" loading="lazy"><span>IBM SKILLSBUILD</span><small>Free technology learning</small></a>
+<a class="partner-card" href="https://learn.microsoft.com/training/" target="_blank" rel="noopener noreferrer"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/microsoft.svg" alt="Microsoft logo" loading="lazy"><span>MICROSOFT LEARN</span><small>Technical training paths</small></a>
+<a class="partner-card" href="https://grow.google/intl/ssa-en/" target="_blank" rel="noopener noreferrer"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/google.svg" alt="Google logo" loading="lazy"><span>GROW WITH GOOGLE</span><small>Digital skills and careers</small></a>
+<a class="partner-card" href="https://aws.amazon.com/training/restart/" target="_blank" rel="noopener noreferrer"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/amazonwebservices.svg" alt="Amazon Web Services logo" loading="lazy"><span>AWS RE/START</span><small>Cloud career training</small></a>
+<a class="partner-card" href="https://www.sayouth.mobi/" target="_blank" rel="noopener noreferrer"><span class="partner-monogram">SA</span><span>SAYOUTH</span><small>South African youth portal</small></a>
+<a class="partner-card" href="https://www.careerjunction.co.za/" target="_blank" rel="noopener noreferrer"><img class="official-logo" src="https://www.careerjunction.co.za/images/cjun/career-junction-logo.svg" alt="CareerJunction logo" loading="lazy"><span>CAREERJUNCTION</span><small>South African job search</small></a>
+<a class="partner-card" href="https://www.harambee.co.za/" target="_blank" rel="noopener noreferrer"><img class="official-logo" src="https://www.harambee.co.za/wp-content/uploads/2019/09/Harambee-Icon.png" alt="Harambee logo" loading="lazy"><span>HARAMBEE</span><small>Youth employment support</small></a>
+<a class="partner-card" href="https://www.yes4youth.co.za/" target="_blank" rel="noopener noreferrer"><img class="official-logo" src="https://www.yes4youth.co.za/hubfs/YES-Logo-Orange-2-1.png" alt="YES logo" loading="lazy"><span>YES</span><small>Work experience network</small></a>
+<a class="partner-card" href="https://www.linkedin.com/jobs/" target="_blank" rel="noopener noreferrer"><img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/linkedin.svg" alt="LinkedIn logo" loading="lazy"><span>LINKEDIN</span><small>Professional opportunities</small></a>
+<a class="partner-card" href="https://www.nsfas.org.za/" target="_blank" rel="noopener noreferrer"><span class="partner-monogram partner-monogram-nsfas">NS</span><span>NSFAS</span><small>Student financial aid</small></a>
+</div>
+</section>
+<section class="section alert"><strong>VERIFICATION POWER-UP</strong><p>Listings link to official provider pages. Confirm the organisation, eligibility, deadline and application destination there before sharing personal information.</p></section>
+</main><footer><div class="footer-inner"><span>© 2026 Opportunity Arcade · OFFICIAL SOURCES</span><span>Verify current eligibility and deadlines on the provider page.</span></div></footer>
+<script src="js/app.js" defer></script>
+</body></html>

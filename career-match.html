@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Find Opportunity Arcade quests that match your CV and skills.">
+<title>CV Match | Opportunity Arcade</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Orbitron:wght@500;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css"><link rel="stylesheet" href="css/arcade.css"><link rel="stylesheet" href="css/responsive.css">
+</head><body><noscript><div class="alert danger" style="margin:10px">JavaScript is required for CV matching.</div></noscript>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header"><nav class="nav" aria-label="Primary navigation">
+<a class="brand" href="index.html">OPPORTUNITY<br>ARCADE</a>
+<button class="menu-btn" aria-expanded="false" aria-controls="nav-links">☰ MENU</button>
+<div class="nav-links" id="nav-links">
+<a href="index.html">Lobby</a><a href="opportunities.html">Quests</a><a href="career-match.html" aria-current="page">CV Match</a><a href="resources.html">Training</a><a href="contact.html">Insert Coin</a><a href="opportunities.html?saved=1">SAVED <span class="nav-count" id="saved-count">0</span></a><button id="profile-trigger" class="profile-trigger" type="button" aria-label="Open My Profile" aria-haspopup="dialog">👤 MY PROFILE</button>
+</div></nav></header>
+<div id="hud" class="hud" aria-live="polite"><span id="player-name">PLAYER 1</span> · XP <b id="hud-xp">0</b> · BADGES <b id="hud-badges">0</b></div>
+<main id="main">
+<section class="hero"><span class="eyebrow">PLAYER TOOL // PRIVATE MATCHING</span><h1>CV Match</h1><p>Tell us what you can do and find quests that fit your skills, experience and interests.</p></section>
+<section class="card arcade-panel match-form">
+<h2>UPLOAD YOUR CV</h2><p class="muted">Your file stays in this browser. Nothing is uploaded to a server. For the best match, upload a text-based CV or paste its text below.</p>
+<form id="match-form"><div class="match-upload"><label for="cv-file"><strong>Choose a CV file</strong></label><input id="cv-file" type="file" accept=".txt,.md,.pdf,.doc,.docx" aria-describedby="file-help"><small id="file-help" class="muted">PDF and Word files can be selected; paste the text below if their contents cannot be read in your browser.</small></div><div class="field"><label for="cv-text">Paste CV text or add your skills</label><textarea id="cv-text" class="textarea" rows="10" placeholder="Example: customer service, Excel, Python, teamwork, matric, driving licence..."></textarea></div><button class="btn primary" type="submit">FIND MY BEST QUESTS</button><div id="match-status" class="match-status" aria-live="polite"></div></form>
+</section>
+<section class="section"><div class="section-head"><h2 id="match-title">YOUR MATCHES</h2><span class="muted">BASED ON SKILLS AND KEYWORDS</span></div><div id="match-results" class="match-results"><div class="empty"><p>Add your CV text or skills to generate matches.</p></div></div></section>
+</main><footer><div class="footer-inner"><span>© 2026 Opportunity Arcade · PRIVATE BROWSER MATCHING</span><span>Always verify eligibility and requirements on the provider page.</span></div></footer>
+<script src="js/app.js" defer></script><script src="js/match.js" defer></script>
+</body></html>

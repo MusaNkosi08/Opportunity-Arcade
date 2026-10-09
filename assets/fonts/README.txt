@@ -1,0 +1,1 @@
+The prototype loads web fonts from Google Fonts. For offline/self-hosted deployment, place licensed font files here and update the CSS.

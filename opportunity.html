@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Opportunity Arcade is a demo youth opportunities portal for young South Africans.">
+<title>Mission Briefing | Opportunity Arcade</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Orbitron:wght@500;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css"><link rel="stylesheet" href="css/arcade.css"><link rel="stylesheet" href="css/responsive.css">
+</head><body><noscript><div class="alert danger" style="margin:10px">JavaScript is required for the interactive arcade features. Please enable JavaScript.</div></noscript>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header"><nav class="nav" aria-label="Primary navigation">
+<a class="brand" href="index.html">OPPORTUNITY<br>ARCADE</a>
+<button class="menu-btn" aria-expanded="false" aria-controls="nav-links">☰ MENU</button>
+<div class="nav-links" id="nav-links">
+<a href="index.html" >Lobby</a>
+<a href="opportunities.html" >Quests</a>
+<a href="career-match.html" >CV Match</a>
+<a href="resources.html" >Training</a>
+<a href="contact.html" >Insert Coin</a>
+<a href="opportunities.html?saved=1">SAVED <span class="nav-count" id="saved-count">0</span></a>
+<button id="profile-trigger" class="profile-trigger" type="button" aria-label="Open My Profile" aria-haspopup="dialog">👤 MY PROFILE</button>
+</div></nav></header>
+<div id="hud" class="hud" aria-live="polite"><span id="player-name">PLAYER 1</span> · XP <b id="hud-xp">0</b> · BADGES <b id="hud-badges">0</b></div>
+<main id="main">
+<a class="btn small back-to-quests" href="opportunities.html">← BACK TO QUESTS</a>
+<div id="detail-root"><div class="loading">INSERT COIN... LOADING...</div></div>
+</main><footer><div class="footer-inner"><span>© 2026 Opportunity Arcade · OFFICIAL SOURCES</span><span>Verify current eligibility and deadlines on the provider page.</span></div></footer>
+<script src="js/app.js" defer></script><script src="js/detail.js" defer></script><script src="js/render.js" defer></script>
+</body></html>
