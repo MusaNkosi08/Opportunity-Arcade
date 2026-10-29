@@ -16,13 +16,7 @@ Opportunity Arcade is a production-style vanilla HTML5/CSS3/JavaScript prototype
 - Web Share API with clipboard fallback
 - No frontend framework or build step
 
-## Pages
-- `index.html` — Arcade Lobby
-- `opportunities.html` — Game Selection Screen
-- `opportunity.html` — Mission Briefing
-- `career-match.html` — CV Match and Opportunity Finder
-- `resources.html` — Training Grounds
-- `contact.html` — Insert Coin
+
 
 ## Features
 - Keyword search across title, organisation and description
@@ -46,87 +40,9 @@ Opportunity Arcade is a production-style vanilla HTML5/CSS3/JavaScript prototype
 - `prefers-reduced-motion` support
 - Scam warnings and official-source verification notices
 
-## Setup
-No npm install is required.
 
-1. Clone or download the repository.
-2. Serve the folder with a local static server. For example:
-   `python3 -m http.server 8000`
-3. Open `http://localhost:8000`.
-4. Do not open the HTML files directly with `file://` because browsers may block JSON `fetch()` requests.
+https://musankosi08.github.io/Opportunity-Arcade/
 
-## Deployment
-The site is suitable for GitHub Pages, Netlify or Vercel as a static site. Publish the repository root.
 
-## Data
-Edit `data/opportunities.json` to add or update records. Each record should retain:
-- title
-- organisation
-- category
-- location
-- closing date
-- experience
-- description
-- requirements
-- qualifications
-- documents
-- steps
-- application URL
-- organisation details
-- date added
-- last updated
 
-The dataset contains real programmes and opportunity-search portals sourced from first-party provider pages. Listings with no published closing date use `null` and display "OPEN · VERIFY DEADLINE" rather than inventing a date. Keep the source URL and `lastUpdated` field current when refreshing records.
-
-## Testing evidence checklist
-- [x] Navigation works across all five pages
-- [x] Search and filters render JSON records
-- [x] Empty state and reset controls exist
-- [x] Save state persists with localStorage
-- [x] Achievement state persists with localStorage
-- [x] Checklist state persists per opportunity
-- [x] Responsive CSS covers small mobile to desktop
-- [x] Keyboard focus states are visible
-- [x] Form fields have labels and validation
-- [x] Reduced-motion preference is respected
-- [x] Official source links and verification warnings are visible
-
-## Known limitations
-- Listings are manually sourced and are not connected to a live verification backend; availability must be checked on each provider page.
-- Forms are front-end demonstrations and do not send messages to a server.
-- Some providers publish rolling or changing availability and do not publish one closing date.
-- Organisation logos and real application links are intentionally not supplied.
-- Profiles are stored locally in the browser and are not synchronized across devices.
-- A production release should add server-side validation, moderation, authentication, a content-management workflow, analytics with appropriate privacy controls, and automated expiry verification.
-
-## Recommended future improvements
-1. Add an administrator verification dashboard.
-2. Connect to a secure database and API.
-3. Add automated opportunity expiry and review queues.
-4. Add organisation verification badges based on a real verification process.
-5. Add user accounts and cross-device saved inventories.
-6. Add richer analytics without collecting unnecessary personal data.
-7. Add automated accessibility testing to CI.
-8. Add Playwright/Cypress end-to-end tests.
-9. Add content moderation and reporting workflows.
-10. Add production monitoring and error reporting.
-
-## Suggested screenshots
-Capture:
-1. Arcade Lobby desktop
-2. Game Selection with filters
-3. Mission Briefing
-4. Training Grounds
-5. Insert Coin form validation
-6. Mobile navigation and opportunity cards
-
-## Wireframe outline
-Lobby → Search → Featured quests → Categories → High Scores → Training → Firewall alert
-
-Game Selection → Search/filter controls → Result count → Opportunity cards → Empty state
-
-Mission Briefing → Dossier → Countdown → Requirements → Loadout → Steps → Checklist → Start Mission
-
-Training Grounds → Six power-up cards → Verification guidance
-
-Insert Coin → Four validated forms → Success state
+<img width="1599" height="794" alt="image" src="https://github.com/user-attachments/assets/78df0013-663a-41fc-9cc4-3c468d6cad46" />
